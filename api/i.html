@@ -1,58 +1,124 @@
-from flask import Flask, request, jsonify, send_file
-import google.generativeai as genai
-import os
-import re
-
-app = Flask(__name__)
-
-# Configure Gemini API
-genai.configure(api_key="AIzaSyBADqoFQCnC5njtkGrEciTyzSug9hRck9A")  # Replace with your actual API key
-model = genai.GenerativeModel(model_name="gemini-1.5-flash")
-
-@app.route('/')
-def index():
-    return send_file('try.html')
-
-@app.route('/predict', methods=['POST'])
-def predict_puside():
-    try:
-        # Ensure you're getting the 'text_prompt' key correctly from the form
-        user_input = request.form.get('text_prompt')  
-        
-        if not user_input:
-            return jsonify({
-                'status': 'error', 
-                'message': 'No text prompt provided.'
-            }), 400
-        
-        # Generate prediction using Gemini
-        text_response = model.generate_content([f"Analyze the following text without providing a description: {user_input}. Include a risk assessment listing Occurring Puside risks%, Not Occurring Puside risks%, and Other Risk Factors%. Conclude with percentages only on the last line. Do not provide the information in table format."])
-        
-        prediction = text_response.text
-
-        # Extract percentages using regular expressions
-        occuring_pct = re.search(r"Occurring Puside risks%: (\d+)%", prediction)
-        not_occuring_pct = re.search(r"Not Occurring Puside risks%: (\d+)%", prediction)
-        other_risk_pct = re.search(r"Other Risk Factors%: (\d+)%", prediction)
-        
-        # Extracting the values, defaulting to 0 if not found
-        occuring_pct_value = occuring_pct.group(1) if occuring_pct else 0
-        not_occuring_pct_value = not_occuring_pct.group(1) if not_occuring_pct else 0
-        other_risk_pct_value = other_risk_pct.group(1) if other_risk_pct else 0
-        
-        return jsonify({
-            'status': 'success', 
-            'prediction': prediction,
-            'occuring_pct': occuring_pct_value,
-            'not_occuring_pct': not_occuring_pct_value,
-            'other_risk_pct': other_risk_pct_value
-        })
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puside Risk Prediction</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            max-width: 600px; 
+            margin: 0 auto; 
+            padding: 20px; 
+            text-align: center; 
+        }
+        textarea { 
+            width: 100%; 
+            height: 150px; 
+            margin-bottom: 10px; 
+            font-family: monospace; 
+            white-space: pre-wrap;
+            word-wrap: break-word; 
+            border: 1px solid #ddd;
+            padding: 10px;
+            background-color: #f9f9f9;
+            font-size: 14px;
+        }
+        .prediction {
+            font-size: 16px; 
+            font-weight: bold; 
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .error {
+            color: red;
+        }
+        canvas {
+            max-width: 500px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Puside Risk Prediction</h1>
+    <form id="predictionForm" enctype="multipart/form-data">
+        <textarea id="textPrompt" name="text_prompt" placeholder="Enter text to analyze for suicide risk..."></textarea>
+        <button type="submit">Analyze Risk</button>
+    </form>
     
-    except Exception as e:
-        return jsonify({
-            'status': 'error', 
-            'message': str(e)
-        }), 500
+    <textarea id="result" readonly placeholder="Prediction result will be displayed here..."></textarea>
+    
+    <!-- Chart.js Bar Graph -->
+    <canvas id="riskChart" width="400" height="200"></canvas>
 
-if __name__ == '__main__':
-    app.run(debug=True)
+    <script>
+        document.getElementById('predictionForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const textPrompt = document.getElementById('textPrompt').value;
+            const resultTextarea = document.getElementById('result');
+    
+            resultTextarea.value = 'Analyzing...';
+    
+            axios.post('/predict', new FormData(e.target))
+                .then(response => {
+                    const prediction = response.data.prediction;
+                    
+                    // Display the result in the textarea
+                    const sanitizedPrediction = prediction.replace(/\*\*|\*|\_|\~|\#/g, '').trim();
+                    resultTextarea.value = sanitizedPrediction;
+    
+                    // Extract percentages directly from the result textarea's content
+                    const percentages = extractPercentages(resultTextarea.value);
+    
+                    // Log the extracted percentages for debugging
+                    console.log('Extracted Percentages:', percentages);
+    
+                    // Plot the bar chart using the extracted percentages
+                    const ctx = document.getElementById('riskChart').getContext('2d');
+                    new Chart(ctx, {
+                        type: 'bar',
+                        data: {
+                            labels: ['Occurring Puside Risks', 'Not Occurring Puside Risks', 'Other Risk Factors'],
+                            datasets: [{
+                                label: 'Risk Percentages',
+                                data: percentages,
+                                backgroundColor: ['rgba(255, 99, 132, 0.2)', 'rgba(54, 162, 235, 0.2)', 'rgba(75, 192, 192, 0.2)'],
+                                borderColor: ['rgba(255, 99, 132, 1)', 'rgba(54, 162, 235, 1)', 'rgba(75, 192, 192, 1)'],
+                                borderWidth: 1
+                            }]
+                        },
+                        options: {
+                            scales: {
+                                y: {
+                                    beginAtZero: true,
+                                    max: 100
+                                }
+                            }
+                        }
+                    });
+                })
+                .catch(error => {
+                    const errorMessage = error.response ? error.response.data.message : 'Unknown error';
+                    resultTextarea.value = `Error: ${errorMessage}`;
+                });
+        });
+    
+        // Function to extract all percentages (numbers) from the result text
+        function extractPercentages(text) {
+            // Regular expression to extract all numbers followed by a percentage symbol
+            const regex = /\d+%/g;
+            const matches = text.match(regex);
+    
+            // If matches found, convert them to numeric values and return
+            if (matches) {
+                return matches.map(match => parseInt(match));  // Convert percentage strings to integers
+            }
+    
+            return [0, 0, 0];  // Return 0 for all if no percentages found
+        }
+    </script>
+    
+</body>
+</html>
