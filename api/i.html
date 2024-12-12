@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puside Risk Prediction</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            max-width: 600px; 
+            margin: 0 auto; 
+            padding: 20px; 
+            text-align: center; 
+        }
+        textarea { 
+            width: 100%; 
+            height: 150px; 
+            margin-bottom: 10px; 
+            font-family: monospace; 
+            white-space: pre-wrap; /* Preserve white spaces and line breaks */
+            word-wrap: break-word; /* Ensure long text breaks correctly */
+            border: 1px solid #ddd;
+            padding: 10px;
+            background-color: #f9f9f9;
+            font-size: 14px;
+        }
+        .prediction {
+            font-size: 16px; 
+            font-weight: bold; 
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .error {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Puside Risk Prediction</h1>
+    <form id="predictionForm" enctype="multipart/form-data">
+        <textarea id="textPrompt" name="text_prompt" placeholder="Enter text to analyze for suicide risk..."></textarea>
+        <button type="submit">Analyze Risk</button>
+    </form>
+    
+    <textarea id="result" readonly placeholder="Prediction result will be displayed here..."></textarea>
+
+    <script>
+        document.getElementById('predictionForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const textPrompt = document.getElementById('textPrompt').value;
+            const resultTextarea = document.getElementById('result');
+
+            resultTextarea.value = 'Analyzing...';
+
+            axios.post('/predict', new FormData(e.target))
+                .then(response => {
+                    const prediction = response.data.prediction;
+                    // Sanitize and format the prediction result (removes any markdown or special symbols)
+                    const sanitizedPrediction = prediction.replace(/\*\*|\*|\_|\~|\#/g, '').trim();
+                    resultTextarea.value = sanitizedPrediction;
+                })
+                .catch(error => {
+                    const errorMessage = error.response ? error.response.data.message : 'Unknown error';
+                    resultTextarea.value = `Error: ${errorMessage}`;
+                });
+        });
+    </script>
+</body>
+</html>
