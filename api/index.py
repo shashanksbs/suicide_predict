@@ -5,12 +5,12 @@ import os
 app = Flask(__name__)
 
 # Configure Gemini API
-genai.configure(api_key="AIzaSyBADqoFQCnC5njtkGrEciTyzSug9hRck9A")  # Replace with your actual API key
+genai.configure(api_key="AIzaSyBkpsEV_aHCMnP24fz3UQeYNC4LkB8ICGY")  # Replace with your actual API key
 model = genai.GenerativeModel(model_name="gemini-1.5-flash")
 
 @app.route('/')
 def index():
-    return send_file('i.html')
+    return send_file('try.html')
 
 @app.route('/predict', methods=['POST'])
 def predict_puside():
@@ -25,7 +25,7 @@ def predict_puside():
             }), 400
         
         # Generate prediction using Gemini
-        text_response = model.generate_content([f"Analyze the following text without providing a description: {user_input}. Include a risk assessment%, listing occurring pseudo risks%, not occurring pseudo risks%, and other risk factors%. Conclude with percentages only on the last line."])
+        text_response = model.generate_content([f"Analyze the following text without providing a description: {user_input}. Include a risk assessment listing Occurring Puside risks%, Not Occurring Puside risks%, and Other Risk Factors%. Conclude with percentages only on the last line."])
         
         prediction = text_response.text
         
