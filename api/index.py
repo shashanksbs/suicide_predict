@@ -10,7 +10,7 @@ model = genai.GenerativeModel(model_name="gemini-1.5-flash")
 
 @app.route('/')
 def index():
-    return send_file('try.html')
+    return send_file('i.html')
 
 @app.route('/predict', methods=['POST'])
 def predict_puside():
