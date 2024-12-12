@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health Support Intake Form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            /* Dark Theme Color Palette */
+            --color-bg-primary: #121212;
+            --color-bg-secondary: #1E1E1E;
+            --color-bg-tertiary: #2C2C2C;
+            --color-text-primary: #E0E0E0;
+            --color-text-secondary: #A0A0A0;
+            --color-accent: #4CAF50;
+            --color-accent-hover: #45a049;
+            --color-error: #F44336;
+            --color-shadow: rgba(0,0,0,0.3);
+
+            /* Typography */
+            --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-primary);
+            line-height: 1.6;
+            background: linear-gradient(135deg, var(--color-bg-primary) 0%, var(--color-bg-secondary) 100%);
+            color: var(--color-text-primary);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            background-attachment: fixed;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 900px;
+            background-color: var(--color-bg-secondary);
+            border-radius: 16px;
+            box-shadow: 0 15px 30px var(--color-shadow);
+            padding: 40px;
+            border: 1px solid rgba(255,255,255,0.05);
+            animation: fade-in 0.5s ease-out;
+        }
+
+        @keyframes fade-in {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid var(--color-accent);
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            color: var(--color-text-primary);
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .header p {
+            color: var(--color-text-secondary);
+            font-size: 1rem;
+        }
+
+        .crisis-alert {
+            background-color: rgba(244, 67, 54, 0.1);
+            border: 1px solid var(--color-error);
+            color: var(--color-error);
+            padding: 15px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .crisis-alert svg {
+            width: 24px;
+            height: 24px;
+        }
+
+        .form-container {
+            background-color: var(--color-bg-tertiary);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+        }
+
+        iframe {
+            width: 100%;
+            border: 2px solid var(--color-accent);
+            border-radius: 8px;
+            background-color: var(--color-text-primary);
+        }
+
+        .alternative-access {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .alternative-access a {
+            color: var(--color-accent);
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .alternative-access a:hover {
+            color: var(--color-accent-hover);
+            text-decoration: underline;
+        }
+
+        .emergency-contacts {
+            background-color: rgba(76, 175, 80, 0.1);
+            border: 1px solid var(--color-accent);
+            border-radius: 12px;
+            padding: 25px;
+            text-align: center;
+        }
+
+        .emergency-contacts h3 {
+            color: var(--color-accent);
+            margin-bottom: 20px;
+            font-size: 1.25rem;
+            position: relative;
+        }
+
+        .emergency-contacts h3::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 50px;
+            height: 3px;
+            background-color: var(--color-accent);
+        }
+
+        .emergency-contacts .contact-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .emergency-contacts .contact-item {
+            background-color: rgba(76, 175, 80, 0.2);
+            padding: 10px 15px;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .emergency-contacts .contact-item:hover {
+            background-color: rgba(76, 175, 80, 0.3);
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+                margin: 0 10px;
+            }
+
+            .header h1 {
+                font-size: 2rem;
+            }
+
+            .emergency-contacts .contact-list {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Mental Health Support Intake Form</h1>
+            <p>Compassionate Care, Confidential Support</p>
+        </div>
+
+        <div class="crisis-alert">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/>
+                <line x1="12" y1="8" x2="12" y2="12"/>
+                <line x1="12" y1="16" x2="12.01" y2="16"/>
+            </svg>
+            <strong>URGENT:</strong> If you are experiencing a mental health crisis, please contact emergency helplines immediately.
+        </div>
+
+        <div class="form-container">
+            <iframe 
+                src="https://docs.google.com/forms/d/e/1FAIpQLSftvRDiTRwQwOTPeLkEsirGHDnukc_bGtedXjUvbcBSJ6NQcQ/viewform?embedded=true" 
+                height="500" 
+                frameborder="0" 
+                marginheight="0" 
+                marginwidth="0"
+            >
+                Loading...
+            </iframe>
+        </div>
+
+        <div class="alternative-access">
+            <a href="https://forms.gle/5SqhGApn9e5qMG597">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/>
+                    <polyline points="10 17 15 12 10 7"/>
+                    <line x1="15" y1="12" x2="3" y2="12"/>
+                </svg>
+                Alternative Form Access
+            </a>
+        </div>
+
+        <div class="emergency-contacts">
+            <h3>Emergency Support Contacts</h3>
+            <div class="contact-list">
+                <div class="contact-item">iCALL Helpline: 022-25521111</div>
+                <div class="contact-item">NIMHANS: 080-46110007</div>
+                <div class="contact-item">Fortis Mental Health: +91-8376804102</div>
+                <div class="contact-item">Sneha Foundation: 91-44-24640050</div>
+                <div class="contact-item">AASRA Helpline: 91-22-27546669</div>
+                <div class="contact-item">Emergency Services: 112</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Error handling for iframe
+        const iframe = document.querySelector('iframe');
+        iframe.addEventListener('error', () => {
+            alert('Unable to load the form. Please use the alternative link or contact support.');
+        });
+
+        // Responsive iframe height adjustment
+        function adjustIframeHeight() {
+            const iframe = document.querySelector('iframe');
+            const containerWidth = iframe.clientWidth;
+            iframe.style.height = `${containerWidth * 0.8}px`;
+        }
+
+        window.addEventListener('resize', adjustIframeHeight);
+        adjustIframeHeight();
+    </script>
+</body>
+</html>

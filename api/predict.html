@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suicide Risk Prediction</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        :root {
+            --primary-color: #3498db;
+            --secondary-color: #2c3e50;
+            --background-color: #f0f4f8;
+            --card-background: #ffffff;
+            --text-color: #333333;
+            --error-color: #e74c3c;
+        }
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 800px; 
+            margin: 0 auto; 
+            padding: 20px; 
+            background: black;
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+        h1 {
+            text-align: center;
+            color: #fff;
+            margin-bottom: 1.5rem;
+        }
+        .card {
+            background-color: var(--card-background);
+            padding: 2rem;
+            border-radius: 30px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2rem;
+        }
+        textarea { 
+            width: 97%; 
+            height: 150px; 
+            margin-bottom: 1rem; 
+            font-family: inherit;
+            padding: 0.75rem;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            font-size: 1rem;
+            resize: vertical;
+        }
+        button {
+            width: 100%;
+            padding: 0.75rem;
+            background: linear-gradient(80deg, #5974eb 30%, #40e484 100%); 
+            color: white;
+            font-weight: bold;
+            border: none;
+            border-radius: 10px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.1s;
+        }
+        button:hover {
+            background-color: #2980b9;
+            transform: translateY(-2px);
+        }
+        button:disabled {
+            background-color: #bdc3c7;
+            cursor: not-allowed;
+            transform: none;
+        }
+        #result {
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+        .error {
+            color: var(--error-color);
+            font-weight: bold;
+        }
+        #chartContainer {
+            height: 300px;
+        }
+        .loading {
+            text-align: center;
+            font-style: italic;
+            color: #7f8c8d;
+        }
+        .visually-hidden {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+        @media (max-width: 768px) {
+            textarea { 
+                width: 89%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Suicide Risk Prediction</h1>
+    <div class="card">
+        <form id="predictionForm">
+            <label for="textPrompt" class="visually-hidden">Enter text to analyze for suicide risk</label>
+            <textarea id="textPrompt" name="text_prompt" placeholder="Enter text to analyze for suicide risk..." required></textarea>
+            <button type="submit" id="submitButton">Analyze</button>
+        </form>
+    </div>
+    
+    <div id="loading" class="loading card" style="display: none;">
+        <p>Analyzing your input. Please wait...</p>
+    </div>
+    
+    <div id="resultCard" class="card" style="display: none;">
+        <h2>Analysis Result</h2>
+        <div id="result"></div>
+    </div>
+    
+    <div id="chartCard" class="card" style="display: none;">
+        <h2>Risk Percentages</h2>
+        <div id="chartContainer">
+            <canvas id="riskChart"></canvas>
+        </div>
+    </div>
+
+    <script>
+        const form = document.getElementById('predictionForm');
+        const textPrompt = document.getElementById('textPrompt');
+        const submitButton = document.getElementById('submitButton');
+        const loadingDiv = document.getElementById('loading');
+        const resultCard = document.getElementById('resultCard');
+        const resultDiv = document.getElementById('result');
+        const chartCard = document.getElementById('chartCard');
+        const ctx = document.getElementById('riskChart').getContext('2d');
+        let chart;
+
+        form.addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            submitButton.disabled = true;
+            loadingDiv.style.display = 'block';
+            resultCard.style.display = 'none';
+            chartCard.style.display = 'none';
+            
+            try {
+                const formData = new FormData(form);
+                const response = await axios.post('/predict', formData);
+                const prediction = response.data.prediction;
+                
+                const sanitizedPrediction = prediction.replace(/\*\*|\*|\_|\~|\#/g, '').trim();
+                resultDiv.textContent = sanitizedPrediction;
+                resultCard.style.display = 'block';
+                
+                const percentages = extractPercentages(sanitizedPrediction);
+                updateChart(percentages);
+                
+                chartCard.style.display = 'block';
+            } catch (error) {
+                const errorMessage = error.response ? error.response.data.message : 'An unknown error occurred';
+                resultDiv.textContent = `Error: ${errorMessage}`;
+                resultCard.style.display = 'block';
+                resultDiv.classList.add('error');
+            } finally {
+                submitButton.disabled = false;
+                loadingDiv.style.display = 'none';
+            }
+        });
+
+        function extractPercentages(text) {
+            const regex = /\d+%/g;
+            const matches = text.match(regex);
+            return matches ? matches.map(match => parseInt(match)) : [0, 0, 0];
+        }
+
+        function updateChart(percentages) {
+            if (chart) {
+                chart.destroy();
+            }
+            
+            chart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ['Occurring Suicide Risks', 'Not Occurring Suicide Risks', 'Other Risk Factors'],
+                    datasets: [{
+                        label: 'Risk Percentages',
+                        data: percentages,
+                        backgroundColor: ['rgba(255, 99, 132, 0.6)', 'rgba(54, 162, 235, 0.6)', 'rgba(75, 192, 192, 0.6)'],
+                        borderColor: ['rgba(255, 99, 132, 1)', 'rgba(54, 162, 235, 1)', 'rgba(75, 192, 192, 1)'],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            max: 100,
+                            ticks: {
+                                callback: function(value) {
+                                    return value + '%';
+                                }
+                            }
+                        }
+                    },
+                    plugins: {
+                        legend: {
+                            display: false
+                        },
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    return context.parsed.y + '%';
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+        }
+    </script>
+</body>
+</html>
