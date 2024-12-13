@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 # Configure Gemini API
 genai.configure(api_key="AIzaSyBADqoFQCnC5njtkGrEciTyzSug9hRck9A")  # Replace with your actual API key
-model = genai.GenerativeModel(model_name="gemini-1.5-flash")
+model = genai.GenerativeModel(model_name="gemini-1.5-flash-8b")
 
 
 @app.route('/')
@@ -15,12 +15,9 @@ def home():
 
 @app.route('/<page>')
 def render_page(page):
-    if page in ['form', 'predict']:
+    if page in ['form', 'i']:
         return send_file(f'{page}.html')
     return "Page not found", 404
-@app.route('/')
-def index():
-    return send_file('index.html')
 
 @app.route('/predict', methods=['POST'])
 def predict_puside():
