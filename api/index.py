@@ -32,7 +32,7 @@ def predict_puside():
             }), 400
         
         # Generate prediction using Gemini
-        text_response = model.generate_content([f"Analyze the following text for potential suicide risk. Provide a risk assessment and give the result in for persentage at the last line: {user_input}"])
+        text_response = model.generate_content([f"Analyze the following text without providing a description: {user_input}. Include a risk assessment listing Occurring Suicide risks%, Not Occurring Suicide risks%, and Other Risk Factors%. Conclude with percentages only on the last line."])
         
         prediction = text_response.text
         
