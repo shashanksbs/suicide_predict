@@ -1,6 +1,7 @@
 from flask import Flask, request, jsonify, send_file
 import google.generativeai as genai
 import os
+import json 
 
 app = Flask(__name__)
 
@@ -8,6 +9,7 @@ app = Flask(__name__)
 genai.configure(api_key="AIzaSyBADqoFQCnC5njtkGrEciTyzSug9hRck9A")  # Replace with your actual API key
 model = genai.GenerativeModel(model_name="gemini-1.5-flash-8b")
 
+JSON_FILE = os.path.join(os.path.dirname(__file__), "info.json")
 
 @app.route('/')
 def home():
