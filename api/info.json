@@ -1,0 +1,1193 @@
+{
+    "dataset": [
+      {
+        "comment": "I feel like there's no point in anything anymore. No matter what I do, it doesn’t seem to matter. I’ve been so tired of trying to pretend I’m okay when inside, I feel completely broken. Sometimes I think everyone would be better off without me.",
+        "description": "The text expresses profound feelings of hopelessness, worthlessness, and despair. The individual feels overwhelmed and believes their efforts are futile. The statement 'I think everyone would be better off without me' is a key indicator of suicidal ideation. This individual is clearly experiencing a significant emotional crisis and needs immediate support.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 40,
+          "not_occurring_suicide_risk": 60,
+          "other_risk_factors": 100
+        }
+      },
+      {
+        "comment": "Today was a really good day. I felt happy and accomplished. It feels like things are finally starting to come together.",
+        "description": "This text reflects positive emotions, a sense of achievement, and optimism. The individual seems to be in a good mental state and is experiencing contentment.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 0,
+          "not_occurring_suicide_risk": 100,
+          "other_risk_factors": 0
+        }
+      },
+      {
+        "comment": "I’m just so tired of everything. It feels like no matter what I do, I’m always falling short. I don’t know how much longer I can keep this up.",
+        "description": "The text shows exhaustion, frustration, and a sense of inadequacy. While it does not explicitly indicate suicidal ideation, it suggests the person is in significant distress and may need support.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 30,
+          "not_occurring_suicide_risk": 70,
+          "other_risk_factors": 80
+        }
+      },
+      {
+        "comment": "I’m feeling more hopeful lately. I’ve started exercising and focusing on myself, and it’s making a difference.",
+        "description": "This text conveys optimism and positive change. The individual is taking active steps to improve their well-being, suggesting a lower risk of emotional crisis.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 5,
+          "not_occurring_suicide_risk": 95,
+          "other_risk_factors": 10
+        }
+      },
+      {
+        "comment": "It’s been so hard to keep going. Sometimes I wonder if there’s any point to all this pain.",
+        "description": "The individual expresses deep emotional pain and questioning the purpose of their struggles. While not explicitly suicidal, the comment indicates a high level of distress.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 35,
+          "not_occurring_suicide_risk": 65,
+          "other_risk_factors": 90
+        }
+      },
+      {
+        "comment": "I’ve been reconnecting with old friends, and it’s been wonderful. It feels great to have people to talk to again.",
+        "description": "This text reflects positive social interaction and emotional well-being. The individual seems to be experiencing happiness and connection.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 0,
+          "not_occurring_suicide_risk": 100,
+          "other_risk_factors": 0
+        }
+      },
+      {
+        "comment": "I can’t stop thinking about how much better everything would be if I just disappeared.",
+        "description": "This comment strongly suggests suicidal ideation, as the individual believes their absence would improve others’ lives. Immediate support is required.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 50,
+          "not_occurring_suicide_risk": 50,
+          "other_risk_factors": 100
+        }
+      },
+      {
+        "comment": "I’ve been feeling a lot better lately. Therapy is really helping me work through things.",
+        "description": "The individual is experiencing improvements in their mental health and credits therapy as a positive factor. The risk of crisis appears low.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 2,
+          "not_occurring_suicide_risk": 98,
+          "other_risk_factors": 5
+        }
+      },
+      {
+        "comment": "Everything feels so overwhelming. I just don’t see a way out of this.",
+        "description": "The individual expresses a sense of being overwhelmed and hopeless. While not explicitly suicidal, this level of distress requires attention and support.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 40,
+          "not_occurring_suicide_risk": 60,
+          "other_risk_factors": 85
+        }
+      },
+      {
+        "comment": "I’m excited about starting a new job next week! It feels like a fresh start.",
+        "description": "The text reflects enthusiasm and hopefulness about future opportunities. The individual appears to be in a positive emotional state.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 0,
+          "not_occurring_suicide_risk": 100,
+          "other_risk_factors": 0
+        }
+      },
+      {
+        "comment": "I've been feeling so empty lately. No matter how hard I try, I can't find any joy in anything.",
+        "description": "This comment indicates a lack of emotional fulfillment, possibly stemming from depression. The individual is expressing an overwhelming sense of emptiness and might need support.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 45,
+          "not_occurring_suicide_risk": 55,
+          "other_risk_factors": 95
+        }
+      },
+      {
+        "comment": "I’m really proud of myself today. I finished everything on my to-do list and even had time for a walk in the park!",
+        "description": "The individual is feeling positive about their accomplishments and is engaging in self-care. This suggests a stable emotional state and low risk of a crisis.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 0,
+          "not_occurring_suicide_risk": 100,
+          "other_risk_factors": 0
+        }
+      },
+      {
+        "comment": "I’m constantly anxious and can’t stop worrying about everything. It’s hard to find peace in my own mind.",
+        "description": "The individual expresses high levels of anxiety and mental unrest. This can be distressing but does not explicitly suggest suicidal ideation.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 20,
+          "not_occurring_suicide_risk": 80,
+          "other_risk_factors": 75
+        }
+      },
+      {
+        "comment": "I just want everything to stop. I can't keep going like this anymore.",
+        "description": "This comment reflects severe emotional pain, possible depression, and a feeling of being overwhelmed. While not directly stating suicidal ideation, the individual's distress is significant.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 50,
+          "not_occurring_suicide_risk": 50,
+          "other_risk_factors": 95
+        }
+      },
+      {
+        "comment": "Things have been going really well lately. I’ve been taking better care of myself and spending more time with family.",
+        "description": "The individual is feeling positive about their life and the improvements they've made. This suggests low risk for any emotional crisis.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 0,
+          "not_occurring_suicide_risk": 100,
+          "other_risk_factors": 0
+        }
+      },
+      {
+        "comment": "I’ve been feeling so down lately. It’s hard to get out of bed in the morning.",
+        "description": "The individual expresses low energy, fatigue, and difficulty engaging with daily tasks, which may indicate depression.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 35,
+          "not_occurring_suicide_risk": 65,
+          "other_risk_factors": 85
+        }
+      },
+  {
+        "comment": "I feel so hopeless. I keep asking myself why I should keep going. It feels like everything is pointless.",
+        "description": "This comment expresses extreme feelings of hopelessness and a loss of purpose. While not explicitly stating suicidal intent, it suggests a high level of emotional distress.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 50,
+          "not_occurring_suicide_risk": 50,
+          "other_risk_factors": 95
+        }
+      },
+      {
+        "comment": "I’m starting to find joy in the little things again. I went for a walk and felt a sense of peace that I haven’t had in a while.",
+        "description": "The individual is experiencing positive changes and moments of contentment, indicating a recovery or improvement in mental health.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 0,
+          "not_occurring_suicide_risk": 100,
+          "other_risk_factors": 0
+        }
+      },
+      {
+        "comment": "I feel invisible. No one seems to care about me anymore. It makes me wonder if anyone would even notice if I disappeared.",
+        "description": "The individual expresses a sense of neglect and isolation, accompanied by thoughts of disappearance, which is a strong indicator of suicidal ideation.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 60,
+          "not_occurring_suicide_risk": 40,
+          "other_risk_factors": 90
+        }
+      },
+      {
+        "comment": "I feel like I’m finally on the right path. My life is beginning to take shape and I’m feeling more confident about my future.",
+        "description": "This comment indicates a positive shift in the individual's outlook on life. They feel confident and hopeful about their future, suggesting low suicide risk.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 0,
+          "not_occurring_suicide_risk": 100,
+          "other_risk_factors": 0
+        }
+      },
+      {
+        "comment": "Everything just feels so overwhelming. I can’t focus on anything. I feel like I'm drowning in my own thoughts.",
+        "description": "The individual expresses being overwhelmed and mentally exhausted, possibly indicating a state of anxiety or depression. While not suicidal, the distress is significant.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 25,
+          "not_occurring_suicide_risk": 75,
+          "other_risk_factors": 80
+        }
+      },
+      {
+        "comment": "I just don’t see a reason to keep fighting. I can’t do this anymore. It’s all too much.",
+        "description": "This is a direct expression of hopelessness and a lack of will to continue. This comment suggests a high risk of suicide and requires immediate attention.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 75,
+          "not_occurring_suicide_risk": 25,
+          "other_risk_factors": 95
+        }
+      },
+      {
+        "comment": "I've been feeling much better since I started a new hobby. It’s nice to focus on something I enjoy.",
+        "description": "The individual is engaging in activities that bring them joy and peace, showing a positive shift in their emotional state.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 0,
+          "not_occurring_suicide_risk": 100,
+          "other_risk_factors": 0
+        }
+      },
+      {
+        "comment": "I’m so tired. It feels like no matter what I do, I can’t escape this constant feeling of sadness.",
+        "description": "This statement reflects prolonged emotional exhaustion and sadness, but does not directly suggest suicidal ideation. It indicates the need for emotional support.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 30,
+          "not_occurring_suicide_risk": 70,
+          "other_risk_factors": 85
+        }
+      },
+      {
+        "comment": "I’ve been talking to a counselor, and it's really helping. I’m feeling more hopeful about the future.",
+        "description": "The individual reports improvement in their mental health with the help of counseling, suggesting a low risk of suicide.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 5,
+          "not_occurring_suicide_risk": 95,
+          "other_risk_factors": 10
+        }
+      },
+      {
+        "comment": "I’m just going through the motions. I don’t care about anything anymore.",
+        "description": "The individual expresses emotional numbness and disinterest in life, which could be a sign of depression or emotional burnout.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 40,
+          "not_occurring_suicide_risk": 60,
+          "other_risk_factors": 85
+        }
+      },
+      {
+        "comment": "I’ve started a gratitude journal, and it’s helped me focus on the good in my life. It’s made me feel more grounded.",
+        "description": "The individual is actively working on improving their mental health and focusing on positive aspects of their life, suggesting a lower risk of emotional crisis.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 0,
+          "not_occurring_suicide_risk": 100,
+          "other_risk_factors": 5
+        }
+      },
+      {
+        "comment": "I just want everything to end. I can’t take this pain anymore.",
+        "description": "This is a clear expression of emotional pain and suicidal ideation. The individual is likely in a crisis and requires immediate intervention.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 80,
+          "not_occurring_suicide_risk": 20,
+          "other_risk_factors": 100
+        }
+      },
+      {
+        "comment": "I had a really fun time with my friends today. It felt nice to laugh again and not think about everything that’s bothering me.",
+        "description": "The individual experienced a positive social interaction that helped lift their mood, indicating a lower risk of emotional crisis.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 0,
+          "not_occurring_suicide_risk": 100,
+          "other_risk_factors": 0
+        }
+      },
+      {
+        "comment": "I don't feel like I belong anywhere. I’m just so alone, and I don’t know how to change that.",
+        "description": "This comment indicates deep feelings of loneliness and isolation. Although not explicitly suicidal, these feelings warrant support and attention.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 45,
+          "not_occurring_suicide_risk": 55,
+          "other_risk_factors": 85
+        }
+      },
+      {
+        "comment": "I feel like I’m finally finding balance in my life. I’ve been focusing on self-care and it’s making a big difference.",
+        "description": "The individual feels positive about their recent efforts to prioritize self-care, which suggests emotional well-being and lower suicide risk.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 0,
+          "not_occurring_suicide_risk": 100,
+          "other_risk_factors": 0
+        }
+      },
+      {
+        "comment": "I don’t see the point in trying anymore. I’ve failed so many times that I don’t think I can ever get it right.",
+        "description": "The individual expresses deep frustration and a sense of failure. While not immediately suicidal, these feelings indicate a need for support and intervention.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 50,
+          "not_occurring_suicide_risk": 50,
+          "other_risk_factors": 90
+        }
+      },
+      {
+        "comment": "I just can't shake this feeling of being trapped. No matter what I do, things just don’t seem to get any better.",
+        "description": "The individual feels stuck and unable to improve their situation, which could lead to feelings of hopelessness and emotional exhaustion. These sentiments suggest a moderate risk of suicide.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 40,
+          "not_occurring_suicide_risk": 60,
+          "other_risk_factors": 85
+        }
+      },
+      {
+        "comment": "I’ve been doing a lot better lately. I’ve been getting outside more, and it feels nice to breathe fresh air.",
+        "description": "The individual is experiencing a positive shift in their routine, showing improvement in physical and emotional well-being.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 0,
+          "not_occurring_suicide_risk": 100,
+          "other_risk_factors": 5
+        }
+      },
+      {
+        "comment": "I’m really struggling to find meaning in my life. It’s hard to care about anything anymore.",
+        "description": "This comment indicates feelings of existential crisis, where the individual finds it difficult to engage with life or see its value, a sign of potential depression or suicidal ideation.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 50,
+          "not_occurring_suicide_risk": 50,
+          "other_risk_factors": 90
+        }
+      },
+      {
+        "comment": "I’ve been making an effort to connect with others. I met some new people recently, and it's been really uplifting.",
+        "description": "This comment reflects positive social interactions, indicating that the individual is working on improving their mental health and emotional connections.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 0,
+          "not_occurring_suicide_risk": 100,
+          "other_risk_factors": 0
+        }
+      },
+      {
+        "comment": "I don’t think I can keep going like this. Every day feels like the same miserable routine. I feel so lost.",
+        "description": "The individual expresses deep frustration, emotional numbness, and a sense of being stuck in a repetitive, hopeless cycle. These feelings may indicate a moderate to high suicide risk.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 60,
+          "not_occurring_suicide_risk": 40,
+          "other_risk_factors": 95
+        }
+      },
+      {
+        "comment": "I had a really good conversation with a close friend today. It felt nice to talk openly about my feelings for once.",
+        "description": "The individual is engaging in positive social interaction, indicating emotional improvement and a sense of support.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 0,
+          "not_occurring_suicide_risk": 100,
+          "other_risk_factors": 5
+        }
+      },
+      {
+        "comment": "I feel completely worthless. No matter how hard I try, I always fall short. I wonder if anyone even cares about me.",
+        "description": "This text reflects deep feelings of worthlessness and emotional exhaustion. The individual is questioning their value and connection to others, which may be indicative of depression or suicidal thoughts.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 55,
+          "not_occurring_suicide_risk": 45,
+          "other_risk_factors": 90
+        }
+      },
+      {
+        "comment": "I’ve been feeling really motivated lately. I’m sticking to my exercise routine, and it’s giving me a sense of accomplishment.",
+        "description": "The individual is actively engaging in self-care and feeling positive about their efforts, suggesting a stable emotional state.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 0,
+          "not_occurring_suicide_risk": 100,
+          "other_risk_factors": 0
+        }
+      },
+      {
+        "comment": "I just feel like I don’t belong anywhere. It’s hard to even get out of bed some days.",
+        "description": "The individual expresses feelings of isolation and emotional exhaustion, which may suggest depression or a desire to withdraw from life.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 45,
+          "not_occurring_suicide_risk": 55,
+          "other_risk_factors": 85
+        }
+      },
+      {
+        "comment": "I’m so grateful for the support I’ve been getting from my family. It makes me feel like there’s hope for the future.",
+        "description": "The individual feels supported and is able to find gratitude in their relationships, suggesting emotional stability and low suicide risk.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 0,
+          "not_occurring_suicide_risk": 100,
+          "other_risk_factors": 0
+        }
+      },
+      {
+        "comment": "I’ve been feeling so detached from everything. Nothing excites me anymore, and it’s hard to see the point in anything.",
+        "description": "This comment indicates emotional detachment, apathy, and possible depressive symptoms, suggesting a moderate risk for suicidal ideation.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 50,
+          "not_occurring_suicide_risk": 50,
+          "other_risk_factors": 85
+        }
+      },
+      {
+        "comment": "I’ve been focusing on my mental health and practicing mindfulness. It’s been helping me stay grounded and calm.",
+        "description": "The individual is proactively addressing their emotional well-being, showing a positive and stable outlook on life.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 0,
+          "not_occurring_suicide_risk": 100,
+          "other_risk_factors": 5
+        }
+      },
+      {
+        "comment": "I can’t stop thinking about how much easier everything would be if I wasn’t here. I feel like I’m a burden to everyone.",
+        "description": "This comment strongly suggests suicidal ideation, as the individual feels like their absence would relieve others. Immediate intervention is needed.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 75,
+          "not_occurring_suicide_risk": 25,
+          "other_risk_factors": 100
+        }
+      },
+      {
+        "comment": "I’ve been taking small steps to improve my life, and it feels like things are finally turning around. I’m starting to feel hopeful again.",
+        "description": "The individual is actively making positive changes in their life and feeling optimistic about the future. This suggests low suicide risk and emotional improvement.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 0,
+          "not_occurring_suicide_risk": 100,
+          "other_risk_factors": 0
+        }
+      },
+      {
+        "comment": "I feel like a failure. No matter how hard I try, I always end up messing things up.",
+        "description": "This comment reflects feelings of worthlessness and frustration. The individual may be experiencing depression, leading to a higher risk of suicide.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 50,
+          "not_occurring_suicide_risk": 50,
+          "other_risk_factors": 85
+        }
+      },
+      {
+        "comment": "I’ve been making time for self-care and practicing gratitude every day. I feel more centered and at peace.",
+        "description": "The individual is focusing on their well-being and finding balance, which suggests improvement in emotional stability.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 0,
+          "not_occurring_suicide_risk": 100,
+          "other_risk_factors": 0
+        }
+      },
+      {
+        "comment": "I’ve been feeling completely numb lately. Nothing excites me or makes me happy anymore.",
+        "description": "The individual expresses emotional numbness and detachment, which could be a sign of depression or emotional burnout.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 40,
+          "not_occurring_suicide_risk": 60,
+          "other_risk_factors": 80
+        }
+      },
+      {
+        "comment": "I had a really good conversation with my therapist today. It made me feel heard and understood.",
+        "description": "The individual is receiving therapeutic support, which suggests progress in their emotional well-being and a low risk of suicide.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 0,
+          "not_occurring_suicide_risk": 100,
+          "other_risk_factors": 5
+        }
+      },
+      {
+        "comment": "I just feel like I’m stuck. Every day feels the same, and I don’t see how things can ever improve.",
+        "description": "The individual expresses feelings of being trapped and hopeless, which may indicate the presence of depressive symptoms or suicidal thoughts.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 50,
+          "not_occurring_suicide_risk": 50,
+          "other_risk_factors": 90
+        }
+      },
+      {
+        "comment": "I’ve been spending a lot of time with my family lately, and it feels good to reconnect with them.",
+        "description": "The individual is experiencing positive social support and connection, which suggests emotional well-being and low suicide risk.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 0,
+          "not_occurring_suicide_risk": 100,
+          "other_risk_factors": 0
+        }
+      },
+      {
+        "comment": "I’m not sure how much longer I can handle all of this. It feels like everything is falling apart.",
+        "description": "The individual expresses significant distress and emotional exhaustion. While not explicitly suicidal, these feelings indicate a high level of emotional pain.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 45,
+          "not_occurring_suicide_risk": 55,
+          "other_risk_factors": 85
+        }
+      },
+      {
+        "comment": "I’m starting to feel more hopeful. I’ve been focusing on my strengths, and it’s helping me feel more positive about my future.",
+        "description": "The individual is experiencing a positive shift in their mindset, focusing on strengths and resilience, which suggests a lower suicide risk.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 0,
+          "not_occurring_suicide_risk": 100,
+          "other_risk_factors": 5
+        }
+      },
+      {
+        "comment": "I’ve been feeling really isolated lately. It’s like no one understands what I’m going through.",
+        "description": "The individual feels isolated and disconnected from others, which can contribute to feelings of hopelessness and suicidal ideation.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 50,
+          "not_occurring_suicide_risk": 50,
+          "other_risk_factors": 90
+        }
+      },
+      {
+        "comment": "I’m looking forward to spending time with my friends this weekend. It’s always a good distraction from everything else.",
+        "description": "The individual is engaging in positive social activities, suggesting emotional stability and a low risk of suicide.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 0,
+          "not_occurring_suicide_risk": 100,
+          "other_risk_factors": 0
+        }
+      },
+      {
+        "comment": "I don’t know how much longer I can keep pretending that I’m okay. I feel so lost and alone inside.",
+        "description": "This comment suggests a high level of emotional distress, with the individual hiding their true feelings. While not explicitly suicidal, these feelings need attention and support.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 55,
+          "not_occurring_suicide_risk": 45,
+          "other_risk_factors": 90
+        }
+      },
+      {
+        "comment": "I’ve been trying to stay positive by practicing mindfulness. It’s really helping me stay calm and focused.",
+        "description": "The individual is engaging in mindfulness practices, suggesting a healthy coping strategy and emotional stability.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 0,
+          "not_occurring_suicide_risk": 100,
+          "other_risk_factors": 5
+        }
+      },
+      {
+        "comment": "I feel so overwhelmed by everything. It’s like I’m carrying a weight that I can’t put down.",
+        "description": "The individual expresses feeling burdened and emotionally exhausted, which could indicate depression or suicidal thoughts.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 50,
+          "not_occurring_suicide_risk": 50,
+          "other_risk_factors": 85
+        }
+      },
+      {
+        "comment": "I’m finally starting to feel like myself again. I’m getting back into the things I love, and it feels great.",
+        "description": "The individual is experiencing recovery and reconnecting with activities that bring them joy, indicating a lower risk of suicide.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 0,
+          "not_occurring_suicide_risk": 100,
+          "other_risk_factors": 0
+        }
+      },
+      {
+        "comment": "I feel like I’m constantly letting everyone down. I don’t know how much longer I can keep going like this.",
+        "description": "This comment reflects self-doubt and feelings of failure. The individual may be feeling overwhelmed and hopeless, which could be associated with a moderate to high risk of suicide.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 50,
+          "not_occurring_suicide_risk": 50,
+          "other_risk_factors": 85
+        }
+      },
+      {
+        "comment": "I’ve been doing really well at work and feeling more confident. It’s nice to feel like I’m succeeding at something.",
+        "description": "The individual is experiencing positive emotions related to accomplishment and self-worth, indicating emotional stability and low suicide risk.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 0,
+          "not_occurring_suicide_risk": 100,
+          "other_risk_factors": 0
+        }
+      },
+      {
+        "comment": "Every day feels like a struggle. I’m so tired of pretending I’m okay when I’m not.",
+        "description": "This comment reflects exhaustion and emotional dissonance. The individual feels the burden of hiding their true feelings, which could indicate a moderate risk for suicidal ideation.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 45,
+          "not_occurring_suicide_risk": 55,
+          "other_risk_factors": 90
+        }
+      },
+      {
+        "comment": "I’ve been making an effort to get more sleep and it’s really helping me feel more energetic and clear-headed.",
+        "description": "The individual is taking proactive steps to improve their physical and mental health, which indicates positive emotional improvement and a low suicide risk.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 0,
+          "not_occurring_suicide_risk": 100,
+          "other_risk_factors": 5
+        }
+      },
+      {
+        "comment": "I don’t know how to keep going. I feel like I’m losing everything I care about.",
+        "description": "The individual expresses significant emotional distress and fear of loss. These feelings could indicate depression and a heightened suicide risk.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 60,
+          "not_occurring_suicide_risk": 40,
+          "other_risk_factors": 90
+        }
+      },
+      {
+        "comment": "I’m so grateful for the support of my friends. It feels good to have people who care about me.",
+        "description": "The individual acknowledges the positive impact of social support, indicating emotional stability and low suicide risk.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 0,
+          "not_occurring_suicide_risk": 100,
+          "other_risk_factors": 0
+        }
+      },
+      {
+        "comment": "Everything feels like it’s falling apart. I’m overwhelmed and don’t know how to make it stop.",
+        "description": "This statement suggests the individual is in a state of crisis, feeling hopeless and emotionally overwhelmed. It’s important to intervene due to the high suicide risk.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 70,
+          "not_occurring_suicide_risk": 30,
+          "other_risk_factors": 95
+        }
+      },
+      {
+        "comment": "I’ve been focusing on small wins each day, and it’s helping me stay motivated. I’m feeling more positive.",
+        "description": "The individual is making positive strides toward emotional health by focusing on small achievements, which suggests a low risk of suicide and emotional recovery.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 0,
+          "not_occurring_suicide_risk": 100,
+          "other_risk_factors": 5
+        }
+      },
+      {
+        "comment": "I feel like no one understands me. I’m always alone with my thoughts and it’s getting harder to cope.",
+        "description": "The individual expresses feelings of isolation and emotional distress, which may increase the risk of suicidal thoughts due to a lack of support.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 55,
+          "not_occurring_suicide_risk": 45,
+          "other_risk_factors": 90
+        }
+      },
+      {
+        "comment": "I’m really looking forward to the weekend. Spending time with my family is always a good escape from everything.",
+        "description": "The individual is anticipating positive social interaction, which can help improve emotional well-being and reduce suicide risk.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 0,
+          "not_occurring_suicide_risk": 100,
+          "other_risk_factors": 0
+        }
+      },
+      {
+        "comment": "I don’t feel like I belong anywhere. It’s hard to even leave my room some days.",
+        "description": "This comment indicates emotional withdrawal, isolation, and feelings of alienation, which could be linked to depression or suicidal ideation.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 60,
+          "not_occurring_suicide_risk": 40,
+          "other_risk_factors": 90
+        }
+      },
+      {
+        "comment": "I feel so much better after my therapy session. It’s amazing how much lighter I feel after talking things through.",
+        "description": "The individual shows emotional improvement and relief after receiving therapeutic support, indicating a lower suicide risk.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 0,
+          "not_occurring_suicide_risk": 100,
+          "other_risk_factors": 5
+        }
+      },
+      {
+        "comment": "I’m so tired. I feel like I can’t keep up with everything anymore. It’s all too much.",
+        "description": "This comment suggests emotional exhaustion and feelings of being overwhelmed, which may indicate an increased risk of suicide due to the individual’s mental and physical fatigue.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 50,
+          "not_occurring_suicide_risk": 50,
+          "other_risk_factors": 85
+        }
+      },
+      {
+        "comment": "I’ve been spending more time with my pets, and it’s been really comforting. It helps me feel less alone.",
+        "description": "The individual is engaging in positive activities, such as bonding with pets, which can contribute to emotional stability and lower suicide risk.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 0,
+          "not_occurring_suicide_risk": 100,
+          "other_risk_factors": 0
+        }
+      },
+      {
+        "comment": "I just feel so lost. Every day is the same and I can’t see a way out of this darkness.",
+        "description": "This comment suggests deep despair and hopelessness, indicating a high level of distress and an urgent need for support or intervention.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 75,
+          "not_occurring_suicide_risk": 25,
+          "other_risk_factors": 95
+        }
+      },
+      {
+        "comment": "I can’t stop thinking about the past. It feels like everything I’ve done has been a mistake.",
+        "description": "The individual expresses regret and distress over past actions, which may indicate unresolved emotional pain and a moderate to high risk of suicidal thoughts.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 60,
+          "not_occurring_suicide_risk": 40,
+          "other_risk_factors": 85
+        }
+      },
+      {
+        "comment": "I’ve been feeling so much more at peace lately. I’m grateful for the small things in life.",
+        "description": "This comment shows emotional stability, mindfulness, and contentment, indicating a low risk of suicide and positive emotional health.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 0,
+          "not_occurring_suicide_risk": 100,
+          "other_risk_factors": 0
+        }
+      },
+      {
+        "comment": "I don’t know why I keep pushing people away. I don’t want to hurt anyone, but I feel so disconnected from everything.",
+        "description": "The individual expresses feelings of emotional disconnection and self-sabotage, which could indicate a moderate risk of suicide due to isolation and inner turmoil.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 55,
+          "not_occurring_suicide_risk": 45,
+          "other_risk_factors": 80
+        }
+      },
+      {
+        "comment": "I’ve been working on a project that excites me. It’s been keeping me motivated and focused.",
+        "description": "The individual is engaged in meaningful activity and finds purpose, suggesting a positive emotional state and low suicide risk.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 0,
+          "not_occurring_suicide_risk": 100,
+          "other_risk_factors": 5
+        }
+      },
+      {
+        "comment": "I just don’t know how much longer I can keep going like this. Everything feels so overwhelming.",
+        "description": "The individual is feeling overwhelmed and emotionally exhausted, which could indicate a higher risk for suicidal thoughts or crisis.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 65,
+          "not_occurring_suicide_risk": 35,
+          "other_risk_factors": 90
+        }
+      },
+      {
+        "comment": "I’ve been spending a lot of time outdoors, hiking and appreciating nature. It’s been great for my mental health.",
+        "description": "The individual is taking steps to improve their mental health through physical activity and mindfulness, reducing the risk of suicide.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 0,
+          "not_occurring_suicide_risk": 100,
+          "other_risk_factors": 0
+        }
+      },
+      {
+        "comment": "I feel like everything I try to do just doesn’t matter. I can’t shake the feeling that nothing is ever going to get better.",
+        "description": "This comment shows deep hopelessness, indicating emotional numbness and a high risk of suicidal thoughts. The individual may be struggling with depression.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 70,
+          "not_occurring_suicide_risk": 30,
+          "other_risk_factors": 95
+        }
+      },
+      {
+        "comment": "I’m starting to reconnect with people I care about. It feels really good to know that I’m not alone.",
+        "description": "The individual is engaging in positive social interactions and finding support, which is indicative of a healthier emotional state and low suicide risk.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 0,
+          "not_occurring_suicide_risk": 100,
+          "other_risk_factors": 0
+        }
+      },
+      {
+        "comment": "I feel like I’ve reached a breaking point. Everything feels too heavy to handle anymore.",
+        "description": "The individual is experiencing severe emotional distress and is overwhelmed, which may suggest a critical need for intervention due to potential suicidal ideation.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 80,
+          "not_occurring_suicide_risk": 20,
+          "other_risk_factors": 95
+        }
+      },
+      {
+        "comment": "I’ve been trying to focus on gratitude lately. It’s really helped me change my perspective and see things in a more positive light.",
+        "description": "The individual is practicing gratitude, which is a healthy coping mechanism and suggests positive emotional growth and a low suicide risk.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 0,
+          "not_occurring_suicide_risk": 100,
+          "other_risk_factors": 5
+        }
+      },
+      {
+        "comment": "I’ve been feeling so lost. It’s like I’m stuck in a never-ending cycle of sadness, and I can’t escape it.",
+        "description": "The individual expresses feelings of hopelessness and entrapment, which indicate a high suicide risk and a need for immediate emotional support.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 75,
+          "not_occurring_suicide_risk": 25,
+          "other_risk_factors": 90
+        }
+      },
+      {
+        "comment": "I’m so thankful for the people in my life who’ve supported me through tough times. I don’t know where I’d be without them.",
+        "description": "The individual acknowledges positive support systems, which contribute to emotional resilience and lower suicide risk.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 0,
+          "not_occurring_suicide_risk": 100,
+          "other_risk_factors": 0
+        }
+      },
+      {
+        "comment": "I just don’t see the point anymore. It feels like I’ve lost everything I cared about, and nothing matters.",
+        "description": "The individual expresses severe emotional pain and detachment, indicating an extremely high risk of suicide and the need for urgent intervention.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 85,
+          "not_occurring_suicide_risk": 15,
+          "other_risk_factors": 95
+        }
+      },
+      {
+        "comment": "I’ve been focusing on improving my physical health. It’s making a huge difference in how I feel emotionally too.",
+        "description": "The individual is improving their overall well-being through physical health practices, which suggests positive coping strategies and low suicide risk.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 0,
+          "not_occurring_suicide_risk": 100,
+          "other_risk_factors": 0
+        }
+      },
+      {
+        "comment": "I don’t feel like I’m worth anything. No matter how hard I try, I always fall short of expectations.",
+        "description": "This comment suggests deep self-doubt and feelings of inadequacy, which could be linked to depression and a higher suicide risk.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 65,
+          "not_occurring_suicide_risk": 35,
+          "other_risk_factors": 90
+        }
+      },
+      {
+        "comment": "I’ve been feeling really good lately. I’m finally able to see some positive changes in my life.",
+        "description": "The individual expresses a sense of accomplishment and emotional improvement, indicating a low suicide risk and a positive mental state.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 0,
+          "not_occurring_suicide_risk": 100,
+          "other_risk_factors": 0
+        }
+      },
+      {
+        "comment": "I feel like I'm always pretending to be okay. Deep down, I feel so lost and alone.",
+        "description": "This comment reveals emotional dissonance and isolation, which could indicate an elevated risk of suicide due to the individual's internal struggle.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 60,
+          "not_occurring_suicide_risk": 40,
+          "other_risk_factors": 85
+        }
+      },
+      {
+        "comment": "I've been making more time for myself, focusing on things I enjoy. It’s helping me feel a lot better.",
+        "description": "The individual is taking positive steps for self-care and emotional well-being, suggesting a low suicide risk.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 0,
+          "not_occurring_suicide_risk": 100,
+          "other_risk_factors": 5
+        }
+      },
+      {
+        "comment": "I just can't seem to find a reason to keep going. It all feels so pointless.",
+        "description": "This comment shows severe emotional distress and hopelessness, indicating a very high suicide risk due to feelings of meaninglessness.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 80,
+          "not_occurring_suicide_risk": 20,
+          "other_risk_factors": 95
+        }
+      },
+      {
+        "comment": "I feel so much better after reaching out to a friend. Sometimes just talking to someone makes a huge difference.",
+        "description": "The individual acknowledges the positive effect of social interaction and emotional support, indicating lower suicide risk and emotional stability.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 0,
+          "not_occurring_suicide_risk": 100,
+          "other_risk_factors": 5
+        }
+      },
+      {
+        "comment": "I feel like I don’t belong anywhere. No one understands me, and it’s hard to keep going.",
+        "description": "This reflects emotional isolation and a sense of alienation, which can significantly increase the risk of suicidal thoughts.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 70,
+          "not_occurring_suicide_risk": 30,
+          "other_risk_factors": 90
+        }
+      },
+      {
+        "comment": "I’ve been really focused on my goals lately, and it’s giving me something to look forward to.",
+        "description": "The individual is actively working toward personal goals and finding purpose, which suggests a positive mental state and low suicide risk.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 0,
+          "not_occurring_suicide_risk": 100,
+          "other_risk_factors": 5
+        }
+      },
+      {
+        "comment": "I'm just so tired. It feels like everything is falling apart and I can’t handle it anymore.",
+        "description": "The individual expresses emotional exhaustion and despair, which could suggest a higher suicide risk due to overwhelming distress and a sense of helplessness.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 75,
+          "not_occurring_suicide_risk": 25,
+          "other_risk_factors": 95
+        }
+      },
+      {
+        "comment": "I’ve been feeling more positive lately, especially after I started volunteering and helping others.",
+        "description": "The individual is engaging in positive actions that improve their emotional health, indicating a low risk of suicide.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 0,
+          "not_occurring_suicide_risk": 100,
+          "other_risk_factors": 5
+        }
+      },
+      {
+        "comment": "I don’t know how to get through this anymore. Everything feels so heavy, and I can’t find a way out.",
+        "description": "This comment shows overwhelming emotional burden and a loss of hope, signaling a high risk of suicide and an urgent need for support.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 85,
+          "not_occurring_suicide_risk": 15,
+          "other_risk_factors": 95
+        }
+      },
+      {
+        "comment": "I’m trying to stay hopeful, but it’s so hard. I just want to feel normal again.",
+        "description": "The individual expresses an ongoing struggle to find stability, which could indicate a moderate suicide risk due to their emotional turmoil.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 50,
+          "not_occurring_suicide_risk": 50,
+          "other_risk_factors": 85
+        }
+      },
+      {
+        "comment": "I’ve been working on setting boundaries and saying no to things that drain me. It’s been really empowering.",
+        "description": "The individual is taking steps to protect their emotional health, which suggests a positive mindset and low suicide risk.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 0,
+          "not_occurring_suicide_risk": 100,
+          "other_risk_factors": 5
+        }
+      },
+      {
+        "comment": "I feel like I’m a burden to everyone around me. Maybe it would be better if I just disappeared.",
+        "description": "This comment strongly indicates suicidal ideation, as the individual feels they are a burden and questions their own worth, requiring immediate support.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 90,
+          "not_occurring_suicide_risk": 10,
+          "other_risk_factors": 100
+        }
+      },
+      {
+        "comment": "I'm really excited about starting a new project at work. It's giving me something to look forward to.",
+        "description": "The individual shows enthusiasm for a new project, which suggests optimism and a positive outlook, indicating a low suicide risk.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 0,
+          "not_occurring_suicide_risk": 100,
+          "other_risk_factors": 0
+        }
+      },
+      {
+        "comment": "I just feel like I’m stuck. No matter how hard I try, it feels like I can’t get out of this rut.",
+        "description": "The individual expresses frustration and hopelessness, indicating emotional stagnation, which may correlate with a moderate to high risk of suicidal thoughts.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 65,
+          "not_occurring_suicide_risk": 35,
+          "other_risk_factors": 85
+        }
+      },
+      {
+        "comment": "I’m starting to feel a bit better, I’ve been getting more sleep and trying to take care of myself.",
+        "description": "The individual is taking steps toward self-care and improvement, suggesting a low risk of suicide and an overall positive emotional shift.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 0,
+          "not_occurring_suicide_risk": 100,
+          "other_risk_factors": 5
+        }
+      },
+      {
+        "comment": "I feel like I’m losing touch with myself. I don’t know who I am anymore.",
+        "description": "The individual is experiencing a loss of self-identity, which can be a sign of emotional or existential crisis, possibly indicating moderate suicide risk.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 50,
+          "not_occurring_suicide_risk": 50,
+          "other_risk_factors": 80
+        }
+      },
+      {
+        "comment": "I’ve been taking time to focus on my hobbies, and it’s really helping me clear my head and feel more at peace.",
+        "description": "The individual is engaging in activities that bring them joy and peace, suggesting emotional healing and a low suicide risk.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 0,
+          "not_occurring_suicide_risk": 100,
+          "other_risk_factors": 5
+        }
+      },
+      {
+        "comment": "I don’t think I can keep up with the expectations everyone has for me. I feel like I’m failing everyone.",
+        "description": "The individual is overwhelmed by external expectations and may feel like a failure, which can contribute to depression and an elevated suicide risk.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 60,
+          "not_occurring_suicide_risk": 40,
+          "other_risk_factors": 90
+        }
+      },
+      {
+        "comment": "I’m surrounded by people who love and support me, and it’s been such a blessing. I feel less alone now.",
+        "description": "The individual acknowledges strong emotional support from loved ones, which can provide a protective factor against suicidal ideation and suggests a low suicide risk.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 0,
+          "not_occurring_suicide_risk": 100,
+          "other_risk_factors": 5
+        }
+      },
+      {
+        "comment": "Every day feels like a battle. I’m just so tired of fighting.",
+        "description": "This comment conveys exhaustion and a sense of being overwhelmed by daily struggles, which could indicate a high suicide risk due to emotional burnout.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 75,
+          "not_occurring_suicide_risk": 25,
+          "other_risk_factors": 90
+        }
+      },
+      {
+        "comment": "I’ve started going to therapy, and I feel like I’m slowly working through my issues. It’s giving me hope.",
+        "description": "The individual is seeking professional help and showing signs of progress, indicating a reduced risk of suicide and a positive outlook on recovery.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 0,
+          "not_occurring_suicide_risk": 100,
+          "other_risk_factors": 10
+        }
+      },
+      {
+        "comment": "I feel like I’m invisible. Nobody really cares about me, and I’m not sure how much longer I can take this.",
+        "description": "This reflects intense feelings of emotional neglect and isolation, which significantly increases the risk of suicide due to a lack of social connection.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 80,
+          "not_occurring_suicide_risk": 20,
+          "other_risk_factors": 95
+        }
+      },
+      {
+        "comment": "I’ve been focusing on staying present and not overthinking things. It’s helping me to stay grounded.",
+        "description": "The individual is practicing mindfulness, which can be an effective tool for emotional regulation and reducing suicide risk by fostering emotional stability.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 0,
+          "not_occurring_suicide_risk": 100,
+          "other_risk_factors": 5
+        }
+      },
+      {
+        "comment": "It just feels like everything is falling apart. I’m not sure how to pick up the pieces anymore.",
+        "description": "The individual feels emotionally broken and unable to cope, which suggests a high risk of suicide due to feelings of helplessness and despair.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 85,
+          "not_occurring_suicide_risk": 15,
+          "other_risk_factors": 95
+        }
+      },
+      {
+        "comment": "I’ve been getting more involved in my community, and it feels really fulfilling. It’s helping me feel connected to something bigger.",
+        "description": "The individual is taking positive steps toward social engagement and finding meaning, reducing suicide risk and suggesting emotional resilience.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 0,
+          "not_occurring_suicide_risk": 100,
+          "other_risk_factors": 5
+        }
+      },
+      {
+        "comment": "I feel so alone. No matter what I do, I can’t seem to shake this feeling that I don’t matter.",
+        "description": "This comment indicates intense loneliness and emotional pain, which could point to a high risk of suicide due to lack of social support and self-worth.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 70,
+          "not_occurring_suicide_risk": 30,
+          "other_risk_factors": 90
+        }
+      },
+      {
+        "comment": "I’ve been learning to accept myself for who I am. It’s a slow process, but it’s helping me feel more at peace.",
+        "description": "The individual is engaging in self-acceptance and personal growth, suggesting lower suicide risk and a positive emotional trajectory.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 0,
+          "not_occurring_suicide_risk": 100,
+          "other_risk_factors": 5
+        }
+      },
+      {
+        "comment": "I’ve been so anxious lately, it’s hard to focus on anything. I feel like I’m spiraling.",
+        "description": "This individual expresses intense anxiety and a sense of losing control, which may indicate a heightened risk of emotional crisis or suicidal thoughts.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 60,
+          "not_occurring_suicide_risk": 40,
+          "other_risk_factors": 85
+        }
+      },
+      {
+        "comment": "I feel like I’m in a better place now. I’ve been setting small goals for myself and it’s helping me stay motivated.",
+        "description": "The individual demonstrates resilience by setting goals and maintaining motivation, suggesting a reduced suicide risk and an overall positive outlook.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 0,
+          "not_occurring_suicide_risk": 100,
+          "other_risk_factors": 5
+        }
+      },
+      {
+        "comment": "I don’t know why I’m still here. Sometimes I wonder if anyone would even notice if I was gone.",
+        "description": "This expresses feelings of being unnoticed and unnecessary, strongly indicating potential suicidal ideation, with a need for immediate intervention.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 85,
+          "not_occurring_suicide_risk": 15,
+          "other_risk_factors": 95
+        }
+      },
+      {
+        "comment": "I’ve been trying to be kinder to myself. It’s difficult, but I’m starting to see small changes.",
+        "description": "The individual is engaging in self-compassion and recognizing gradual improvements, indicating emotional resilience and a low suicide risk.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 0,
+          "not_occurring_suicide_risk": 100,
+          "other_risk_factors": 10
+        }
+      },
+      {
+        "comment": "Everything feels pointless. I’m constantly exhausted and nothing seems to make a difference anymore.",
+        "description": "This comment reveals overwhelming fatigue and hopelessness, which can indicate a significant risk of suicidal ideation or crisis.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 80,
+          "not_occurring_suicide_risk": 20,
+          "other_risk_factors": 95
+        }
+      },
+      {
+        "comment": "I’m feeling more connected to others lately, especially since I’ve started going to group therapy.",
+        "description": "The individual reports feeling more socially connected and supported, suggesting a lower suicide risk due to stronger social bonds.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 0,
+          "not_occurring_suicide_risk": 100,
+          "other_risk_factors": 10
+        }
+      },
+      {
+        "comment": "I’ve been feeling so numb lately. It’s like I’m just going through the motions, but I’m not really here.",
+        "description": "Emotional numbness and detachment are often signs of depression or dissociation, which can increase the likelihood of suicidal thoughts or feelings of emptiness.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 70,
+          "not_occurring_suicide_risk": 30,
+          "other_risk_factors": 90
+        }
+      },
+      {
+        "comment": "I’m learning to say no when I need to, and it’s been a big relief. I’m feeling more in control of my life.",
+        "description": "The individual is setting healthy boundaries, which can promote emotional well-being and a sense of control, reducing the risk of suicide.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 0,
+          "not_occurring_suicide_risk": 100,
+          "other_risk_factors": 5
+        }
+      },
+      {
+        "comment": "Some days are better than others, but today feels like it’s too much. I’m not sure how to cope anymore.",
+        "description": "This comment highlights a fluctuating emotional state with overwhelming distress, indicating a moderate suicide risk due to emotional instability.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 65,
+          "not_occurring_suicide_risk": 35,
+          "other_risk_factors": 85
+        }
+      },
+      {
+        "comment": "I feel like I’m getting stronger. I’ve been focusing on the positives, and I’m slowly rebuilding my life.",
+        "description": "The individual expresses progress and resilience, actively focusing on positive changes, suggesting a low suicide risk and an improving mental state.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 0,
+          "not_occurring_suicide_risk": 100,
+          "other_risk_factors": 5
+        }
+      },
+      {
+        "comment": "I’ve been having thoughts about ending it all. I don’t know how much longer I can keep going like this.",
+        "description": "This is a clear indication of suicidal ideation. Immediate intervention is necessary to ensure the safety of the individual.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 90,
+          "not_occurring_suicide_risk": 10,
+          "other_risk_factors": 100
+        }
+      },
+      {
+        "comment": "I’ve been journaling every day to track my emotions. It’s helping me process everything, and I’m feeling more in control.",
+        "description": "The individual is actively engaging in self-reflection, which is a positive coping strategy that can lower the risk of suicide and improve emotional regulation.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 0,
+          "not_occurring_suicide_risk": 100,
+          "other_risk_factors": 5
+        }
+      },
+      {
+        "comment": "It feels like no one understands me, and I’m not sure if I can keep pretending everything is okay.",
+        "description": "The individual feels misunderstood and is struggling to mask their true emotions. This can contribute to a higher suicide risk due to emotional isolation and internal conflict.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 70,
+          "not_occurring_suicide_risk": 30,
+          "other_risk_factors": 90
+        }
+      },
+      {
+        "comment": "I’ve been making progress in therapy, and I feel hopeful about the future. Things are starting to look up.",
+        "description": "The individual is showing signs of improvement and optimism through therapy, indicating a low suicide risk and emotional recovery.",
+        "risk_assessment": {
+          "occurring_suicide_risk": 0,
+          "not_occurring_suicide_risk": 100,
+          "other_risk_factors": 5
+        }
+      }
+    ]
+  }
+  
