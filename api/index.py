@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 # Configure Gemini API
 genai.configure(api_key="AIzaSyAn_9wz5q5etT5_Bgm_aEh4HgMXuzIrrUI")  # Replace with your actual API key
-model = genai.GenerativeModel(model_name="gemini-2.0-flash")
+model = genai.GenerativeModel(model_name="gemini-1.5-flash")
 
 JSON_FILE = os.path.join(os.path.dirname(__file__), "info.json")
 
